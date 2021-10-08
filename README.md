@@ -145,7 +145,7 @@ npm install @stdlib/math-base-ops-sub
 ### Usage
 
 ```c
-#include "stdlib/math/base/ops/add.h"
+#include "stdlib/math/base/ops/sub.h"
 ```
 
 #### stdlib_base_sub( x, y )
