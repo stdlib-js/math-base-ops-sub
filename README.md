@@ -186,9 +186,9 @@ double stdlib_base_sub( const double x, const double y );
 #include "stdlib/math/base/ops/sub.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
-    double y[] = { 3.14, -3.14, -0.0, 0.0/0.0 };
+int main( void ) {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+    const double y[] = { 3.14, -3.14, -0.0, 0.0/0.0 };
 
     double z;
     int i;
@@ -268,7 +268,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
