@@ -45,30 +45,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-ops-sub
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var sub = require( '@stdlib/math-base-ops-sub' );
+sub = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-sub@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var sub = require( 'path/to/vendor/umd/math-base-ops-sub/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-sub@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.sub;
+})();
+</script>
 ```
 
 #### sub( x, y )
@@ -112,9 +120,14 @@ v = sub( NaN, NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var rand = require( '@stdlib/random-base-discrete-uniform' );
-var sub = require( '@stdlib/math-base-ops-sub' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-sub@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x;
 var y;
@@ -125,6 +138,11 @@ for ( i = 0; i < 100; i++ ) {
     y = rand( -50, 50 );
     console.log( '%d - %d = %d', x, y, sub( x, y ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -133,90 +151,7 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/math/base/ops/sub.h"
-```
-
-#### stdlib_base_sub( x, y )
-
-Subtracts two double-precision floating-point numbers.
-
-```c
-double v = stdlib_base_sub( -5.0, 2.0 );
-// returns -7.0
-```
-
-The function accepts the following arguments:
-
--   **x**: `[in] double` first input value.
--   **y**: `[in] double` second input value.
-
-```c
-double stdlib_base_sub( const double x, const double y );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/math/base/ops/sub.h"
-#include <stdio.h>
-
-int main( void ) {
-    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
-    const double y[] = { 3.14, -3.14, -0.0, 0.0/0.0 };
-
-    double z;
-    int i;
-    for ( i = 0; i < 4; i++ ) {
-        z = stdlib_base_sub( x[ i ], y[ i ] );
-        printf( "%lf - %lf = %lf\n", x[ i ], y[ i ], z );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
