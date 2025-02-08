@@ -228,7 +228,7 @@ int main( void ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math-base/ops/add`][@stdlib/math/base/ops/add]</span><span class="delimiter">: </span><span class="description">compute the sum of two double-precision floating-point numbers.</span>
+-   <span class="package-name">[`@stdlib/number-float64/base/add`][@stdlib/number/float64/base/add]</span><span class="delimiter">: </span><span class="description">compute the sum of two double-precision floating-point numbers.</span>
 -   <span class="package-name">[`@stdlib/math-base/ops/div`][@stdlib/math/base/ops/div]</span><span class="delimiter">: </span><span class="description">divide two double-precision floating-point numbers.</span>
 -   <span class="package-name">[`@stdlib/math-base/ops/mul`][@stdlib/math/base/ops/mul]</span><span class="delimiter">: </span><span class="description">multiply two double-precision floating-point numbers.</span>
 
@@ -262,7 +262,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -310,7 +310,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/ops/add]: https://github.com/stdlib-js/math-base-ops-add
+[@stdlib/number/float64/base/add]: https://github.com/stdlib-js/number-float64-base-add
 
 [@stdlib/math/base/ops/div]: https://github.com/stdlib-js/math-base-ops-div
 
