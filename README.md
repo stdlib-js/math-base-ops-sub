@@ -230,7 +230,7 @@ int main( void ) {
 
 -   <span class="package-name">[`@stdlib/number-float64/base/add`][@stdlib/number/float64/base/add]</span><span class="delimiter">: </span><span class="description">compute the sum of two double-precision floating-point numbers.</span>
 -   <span class="package-name">[`@stdlib/math-base/ops/div`][@stdlib/math/base/ops/div]</span><span class="delimiter">: </span><span class="description">divide two double-precision floating-point numbers.</span>
--   <span class="package-name">[`@stdlib/math-base/ops/mul`][@stdlib/math/base/ops/mul]</span><span class="delimiter">: </span><span class="description">multiply two double-precision floating-point numbers.</span>
+-   <span class="package-name">[`@stdlib/number-float64/base/mul`][@stdlib/number/float64/base/mul]</span><span class="delimiter">: </span><span class="description">multiply two double-precision floating-point numbers.</span>
 
 </section>
 
@@ -314,7 +314,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/math/base/ops/div]: https://github.com/stdlib-js/math-base-ops-div
 
-[@stdlib/math/base/ops/mul]: https://github.com/stdlib-js/math-base-ops-mul
+[@stdlib/number/float64/base/mul]: https://github.com/stdlib-js/number-float64-base-mul
 
 <!-- </related-links> -->
 
